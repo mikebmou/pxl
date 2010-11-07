@@ -9,4 +9,4 @@ Sinatra::Base.set(
 )
 
 require 'main'
-run Sinatra::Application
+run Sinatra.Application
