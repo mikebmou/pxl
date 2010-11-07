@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'app'
 
 Sinatra::Default.set(
   :views => File.join(File.dirname(FILE), 'views'), 
