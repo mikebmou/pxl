@@ -17,9 +17,9 @@ configure do
 		:title => 'pxl ninja',
 		:author => 'Michael Moulton',
 		:url_base => 'http://localhost:4567/',
-		:admin_password => 'miguia',
+		:admin_password => 'changeme',
 		:admin_cookie_key => 'pxl_admin',
-		:admin_cookie_value => '52d6a986314ace58',
+		:admin_cookie_value => '51d6a986314ace58',
 		:disqus_shortname => nil
 	)
 end
