@@ -3,8 +3,8 @@ require 'sinatra'
 
 Sinatra::Application.default_options.merge!(
   :views => File.join(File.dirname(__FILE__), 'views'),
-  :run => false,
-  :env => ENV['RACK_ENV']=production script/server
+  :run => true,
+  :env => ENV['RACK_ENV']
 )
 
 require 'main'
