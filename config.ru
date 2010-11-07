@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 
-Sinatra::Default.set(
+Sinatra::Application.set(
   :views => File.join(File.dirname(FILE), 'views'), 
   :run => true, 
   :environment => ENV['RACK_ENV']
