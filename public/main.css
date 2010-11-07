@@ -75,10 +75,6 @@ hr {
 	color: #B32536;
 }
 
-#boxes {
-	float: left;
-}
-
 #logo2 h1 {
 	margin: 0;
 	height: 130px;
@@ -107,6 +103,14 @@ hr {
 	display: block;
 	text-decoration: none;
 	color: #B32536;
+}
+
+#tweetbox {
+	margin-top: 40px;
+	padding: 10px;
+	width: 220px;
+	background: white;
+	border: 1px solid #C4C4C4;
 }
 
 /* Content */

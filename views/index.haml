@@ -11,6 +11,17 @@
           %a{:href => "/"}= Blog.title
         %p
           by: #{Blog.author}
+    %div#tweetbox
+      :ruby 
+        def twitterApp
+          url =  "http://twitter.com/statuses/user_timeline/michaelmoulton.json?count=1"
+          buffer = open(url, "UserAgent" => "Ruby-Wget").read
+          result = JSON.parse(buffer)
+          result.each do |subject|
+            return subject['text']
+          end
+        end
+      %p= twitterApp
     #content
       - posts.each do |post|
         .post
@@ -57,8 +68,7 @@
         	document.write('<script type="text/javascript" src="http://disqus.com/forums/#{Blog.disqus_shortname}/get_num_replies.js' + query + '"></' + 'script>');
         	})();
         //]]>
-            #footer
-      %p#legal
-        Content and Design by #{Blog.author} |
-        Twitter
+    #footer
+      #legal
+        Content and Design by #{Blog.author} | Twitter
         %a{:href => "http://www.twitter.com/michaelmoulton"} @michaelmoulton
