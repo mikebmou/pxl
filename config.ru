@@ -1,9 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'haml'
-require 'maruku'
-require 'sequel'
-require 'syntax'
 
 Sinatra::Default.set(
   :views => File.join(File.dirname(FILE), 'views'), 
