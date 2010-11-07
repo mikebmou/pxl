@@ -3,7 +3,7 @@ require 'sinatra'
 
 Sinatra::Application.set(
   :views => File.join(File.dirname(FILE), 'views'), 
-  :run => true, 
+  :run => false, 
   :environment => ENV['RACK_ENV']
 )
 
