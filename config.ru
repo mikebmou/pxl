@@ -8,4 +8,4 @@ Sinatra::Application.default_options.merge!(
 )
 
 require 'main'
-run Sinatra.application
+run Sinatra::application
