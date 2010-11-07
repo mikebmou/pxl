@@ -1,10 +1,9 @@
 require 'rubygems'
 require 'sinatra'
-require 'sequel'
 
 Sinatra::Application.default_options.merge!(
   :views => File.join(File.dirname(__FILE__), 'views'),
-  :run => false,
+  :run => true,
   :env => ENV['RACK_ENV']
 )
 
