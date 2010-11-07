@@ -49,7 +49,7 @@ layout 'layout'
 ### Public
 
 get '/' do
-	posts = Post.reverse_order(:created_at).limit(10)
+	posts = Post.reverse_order(:created_at).limit(5)
 	haml :index, :locals => { :posts => posts }, :layout => false
 end
 

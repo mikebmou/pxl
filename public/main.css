@@ -8,9 +8,17 @@ body {
 	color: #474747;
 }
 
-h1, h2, h3 {
+h1, h2, h4 {
 	font: 1.82em;
 	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #474747;
+	text-align: left;
+}
+
+h3 {
+	font: 2em;
+	font-weight: bold;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #474747;
 	text-align: left;
@@ -37,6 +45,10 @@ hr {
 }
 
 /* Logo */
+
+#header {
+	margin-top: 0;
+}
 
 #logo {
 	background: url('/images/pxls.png') no-repeat bottom right;
@@ -84,7 +96,7 @@ hr {
 	height: 25px;
 	width: 212px;
 	padding-bottom: 41px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 #logo2 h1 {
@@ -127,6 +139,11 @@ hr {
 	width: 220px;
 	border-top: 1px solid #C4C4C4;
 	border-bottom: 1px solid #C4C4C4;
+}
+
+#tweetbox a {
+	font-size: 10px;
+	text-decoration: none;
 }
 
 /* Content */
@@ -320,3 +337,120 @@ form[name=edit] textarea {
 	height: 25em;
 }
 
+
+/* Panel */
+
+img {
+	border:none;
+}
+
+.panel {
+	position: fixed;
+	top: 20px;
+	left: 0;
+	display: none;
+	background: #FFF;
+	border:1px solid #C4C4C4;
+	width: 330px;
+	height: auto;
+	padding: 30px 30px 30px 80px;
+	filter: alpha(opacity=90);
+	opacity: .90;
+	z-index: 9999;
+}
+
+.panel p{
+	margin: 0 0 15px 0;
+	padding: 0;
+	font-color: #B0B0B0;
+}
+
+.panel a, .panel a:visited{
+	margin: 0;
+	padding: 0;
+	color: #B0B0B0;
+	text-decoration: none;
+	border-bottom: 1px solid #9FC54E;
+}
+
+.panel a:hover, .panel a:visited:hover{
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 1px solid #ffffff;
+}
+
+a.trigger{
+	position: fixed;
+	text-decoration: none;
+	top: 62px; left: 0;
+	font-size: 16px;
+	letter-spacing:-1px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	color:#B0B0B0;
+	padding: 5px 15px 5px 15px;
+	font-weight: 700;
+	background:#FFF;
+	border:1px solid #C4C4C4;
+	display: block;
+	z-index: 99999;
+}
+
+a.trigger:hover{
+	position: fixed;
+	text-decoration: none;
+	top: 62px; left: 0;
+	font-size: 16px;
+	letter-spacing:-1px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	color:#B32536;
+	padding: 5px 15px 5px 20px;
+	font-weight: 700;
+	background:#FFF;
+	border:1px solid #C4C4C4;
+	display: block;
+	z-index: 99999;
+}
+
+a.active.trigger {
+	background:#FFF;
+	color:#B32536;
+	z-index: 99999;
+}
+
+.columns{
+	clear: both;
+	width: 330px;
+	padding: 0 0 20px 0;
+	line-height: 22px;
+}
+
+.colleft{
+	float: left;
+	width: 130px;
+	line-height: 22px;
+}
+
+.colright{
+	float: right;
+	width: 130px;
+	line-height: 22px;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+ul li{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+hr{
+	background-color: #333333;
+	height: 1px;
+}
