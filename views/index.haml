@@ -10,7 +10,7 @@
         %h1
           %a{:href => "/"}= Blog.title
         %p
-          by #{Blog.author}
+          by: #{Blog.author}
     #content
       - posts.each do |post|
         .post
@@ -31,7 +31,7 @@
               %a{:href => post.url} Continue reading &raquo;
       - if posts.empty?
         %h2/
-        %p Aww there's nothing here yet.
+        %p Shoot! There's nothing here yet.
         %p
           %a{:href => "/auth"}> Log in
           , then
