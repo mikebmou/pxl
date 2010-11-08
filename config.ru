@@ -6,7 +6,7 @@ require 'rack'
 Sinatra::Application.set(
   :views => File.join(File.dirname(FILE), 'views'), 
   :run => false, 
-  :environment => ENV['RACK_ENV']  
+  :environment => RACK_ENV=production 
 )
 
 require 'main'
