@@ -1,10 +1,10 @@
 require 'rubygems'
 require 'sinatra'
-require 'haml'
 
 # include these
 require 'open-uri'
 require 'json'
+require 'haml'
 
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/vendor/sequel'
 require 'sequel'
