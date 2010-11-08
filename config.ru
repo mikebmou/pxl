@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'haml'
 
 Sinatra::Base.set(
   :views => File.join(File.dirname(FILE), 'views'), 
