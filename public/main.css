@@ -8,7 +8,7 @@ body {
 	color: #474747;
 }
 
-h1, h2, h4 {
+h1, h2 {
 	font: 1.82em;
 	font-weight: normal;
 	font-family: Arial, Helvetica, sans-serif;
@@ -22,6 +22,16 @@ h3 {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #474747;
 	text-align: left;
+}
+
+h4 {
+	font: 1.82em;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #474747;
+	text-align: left;
+	margin-bottom: 0;
+	text-decoration: underline;
 }
 
 p, ol, ul {
@@ -357,6 +367,9 @@ img {
 	filter: alpha(opacity=90);
 	opacity: .90;
 	z-index: 9999;
+	-moz-box-shadow: 0 1px 3px #B0B0B0;
+	-webkit-box-shadow: 0 1px 3px #B0B0B0;
+	box-shadow: 0 1px 3px #B0B0B0;
 }
 
 .panel p{
@@ -368,17 +381,15 @@ img {
 .panel a, .panel a:visited{
 	margin: 0;
 	padding: 0;
-	color: #B0B0B0;
+	color: #B32536;
 	text-decoration: none;
-	border-bottom: 1px solid #9FC54E;
 }
 
 .panel a:hover, .panel a:visited:hover{
 	margin: 0;
 	padding: 0;
-	color: #ffffff;
+	color: #B0B0B0;
 	text-decoration: none;
-	border-bottom: 1px solid #ffffff;
 }
 
 a.trigger{
@@ -391,10 +402,13 @@ a.trigger{
 	color:#B0B0B0;
 	padding: 5px 15px 5px 15px;
 	font-weight: 700;
-	background:#FFF;
+	background:#FAFAFA;
 	border:1px solid #C4C4C4;
 	display: block;
 	z-index: 99999;
+	-moz-box-shadow: 0 1px 3px #ccc;
+	-webkit-box-shadow: 0 1px 3px #ccc;
+	box-shadow: 0 1px 3px #ccc;
 }
 
 a.trigger:hover{
@@ -407,16 +421,22 @@ a.trigger:hover{
 	color:#B32536;
 	padding: 5px 15px 5px 20px;
 	font-weight: 700;
-	background:#FFF;
+	background:#FAFAFA;
 	border:1px solid #C4C4C4;
 	display: block;
 	z-index: 99999;
+	-moz-box-shadow: 0 1px 3px #B0B0B0;
+	-webkit-box-shadow: 0 1px 3px #B0B0B0;
+	box-shadow: 0 1px 3px #B0B0B0;
 }
 
 a.active.trigger {
-	background:#FFF;
+	background:#FAFAFA;
 	color:#B32536;
 	z-index: 99999;
+	-moz-box-shadow: 0 1px 3px #ccc;
+	-webkit-box-shadow: 0 1px 3px #ccc;
+	box-shadow: 0 1px 3px #ccc;
 }
 
 .columns{
