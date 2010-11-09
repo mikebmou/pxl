@@ -1,9 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 
-# include these
-require 'open-uri'
-
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/vendor/sequel'
 require 'sequel'
 
