@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'sinatra'
+require 'bundler/setup'
 
 Sinatra::Application.set(
   :views => File.join(File.dirname(FILE), 'views'), 
