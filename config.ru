@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'haml'
 
 Sinatra::Application.set(
   :views => File.join(File.dirname(FILE), 'views'), 
@@ -9,4 +8,4 @@ Sinatra::Application.set(
 )
 
 require 'main'
-run Sinatra.Application
+run Sinatra::Application
