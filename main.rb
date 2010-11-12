@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'sinatra'
-
 # include these
 require 'open-uri'
 require 'json'
